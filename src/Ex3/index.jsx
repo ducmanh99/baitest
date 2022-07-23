@@ -1,21 +1,16 @@
 import React, { useState } from 'react'
 const Ex3 = () => {
-  // giá trị chả về 
   const [dataLink,setDataLink] = useState({})
-  // ------------------
   const [shrtco,setShrtco] = useState(false)
   const [qr,setQr] = useState(false)
   const [shiny,setShiny] = useState(false)
-  // value input
   const [valueInput,setValueInput] = useState("")
   
-  // html dom
   const SubmitForm = (e) =>{
     e.preventDefault();
     shrtcodeAPI(valueInput)
   } 
 
-  // api
   const shrtcodeAPI = async(URL) =>{
     try {
       const res = await fetch(`https://api.shrtco.de/v2/shorten?url=${URL}`)

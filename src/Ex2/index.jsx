@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 const Ex2 = () => {
+  
   return (
-    <div>
-        abc
-    </div>
+    <div>Ex2</div>
   )
-}
+  }
 
 export default Ex2
